@@ -109,7 +109,7 @@ export default function Sidebar({ categories, activeCategory, onCategoryClick }:
                 {walletAddresses.map((w, i) => (
                   <div key={w.chain} className="crypto-item">
                     <div className="crypto-header">
-                      <img className="crypto-icon" src={w.icon} alt={w.symbol} width={24} height={24} />
+                      <img className="crypto-icon" src={w.icon} alt={w.symbol} />
                       <span className="crypto-name">{w.chain}</span>
                       <span className="crypto-symbol">{w.symbol}</span>
                     </div>
