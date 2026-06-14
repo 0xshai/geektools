@@ -49,3 +49,28 @@
     - 曾植入恶意软件
     - 闭源不透明
   replaced_by: WindowsCleaner
+- name: Lightroom
+  reason:
+    - 订阅制收费
+    - 数据上传 Adobe 云
+  replaced_by: RapidRAW
+- name: Google Translate
+  reason:
+    - 隐私担忧
+    - 翻译内容被用于训练
+  replaced_by: 沙拉翻译
+- name: WinRAR
+  reason:
+    - 闭源软件
+    - 免费版有广告弹窗
+  replaced_by: 7-Zip
+- name: iTunes
+  reason:
+    - 臃肿过时
+    - Windows 版体验极差
+  replaced_by: mpv
+- name: Zoom
+  reason:
+    - 隐私问题频发
+    - 曾将数据路由至中国服务器
+  replaced_by: Jitsi Meet

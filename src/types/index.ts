@@ -27,6 +27,7 @@ export interface ToolItem {
   tips?: string[];
   alternatives?: string[];
   tags?: string[];
+  blog_url?: string;
 }
 
 export interface Category {
