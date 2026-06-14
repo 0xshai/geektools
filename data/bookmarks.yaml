@@ -1,0 +1,2521 @@
+- category: 编程工具
+  icon: 🛠️
+  items:
+  - name: Zed
+    url: https://zed.dev/
+    github: https://github.com/zed-industries/zed
+    desc: 轻量极速的现代代码编辑器
+    opensource: true
+    license: GPL
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2024'
+    rating: S+
+    author:
+      name: Zed Industries
+      background: Atom / Tree-sitter 原班团队打造
+    privacy: 4
+    usability: 4
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - Rust 编写，启动毫秒级
+    - 原生 AI 协作，内置 Copilot
+    - 实时多人协作编辑
+    - GPU 渲染，流畅 60fps
+    disadvantages:
+    - Windows 支持尚在早期阶段
+    - 插件生态不如 VS Code 丰富
+    solves:
+    - VS Code 启动慢、内存占用高
+    - 大项目卡顿问题
+    install:
+      mac: brew install --cask zed
+      windows: winget install Zed.Zed
+    tips:
+    - 首次使用建议安装 Rust 语言服务
+    - 配置 AI 功能需要 API Key
+    alternatives:
+    - VS Code
+    - Neovim
+    tags:
+    - 开源
+    - 免费
+    - 跨平台
+    - Rust
+    - 推荐
+  - name: WezTerm
+    url: https://wezfurlong.org/wezterm
+    github: https://github.com/wezterm/wezterm
+    desc: 高性能跨平台终端模拟器
+    opensource: true
+    license: MIT
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2020'
+    rating: A
+    author:
+      name: Wez Furlong
+      background: 开源终端爱好者，长期维护
+    privacy: 5
+    usability: 3
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - GPU 加速渲染
+    - Lua 脚本配置，高度可定制
+    - 跨平台体验一致
+    - 支持多路复用
+    disadvantages:
+    - 配置学习曲线较陡
+    - 文档偏技术向
+    solves:
+    - Windows 终端体验差
+    - iTerm2 仅限 macOS
+    install:
+      mac: brew install --cask wezterm
+      windows: winget install wez.wezterm
+    tips:
+    - 建议从社区配置模板开始
+    alternatives:
+    - Windows Terminal
+    - iTerm2
+    tags:
+    - 开源
+    - 免费
+    - 跨平台
+    - 终端
+  - name: Lazygit
+    url: https://github.com/jesseduffield/lazygit
+    github: https://github.com/jesseduffield/lazygit
+    desc: 终端里的 Git 可视化工具
+    opensource: true
+    license: MIT
+    country: 澳大利亚
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2018'
+    rating: S
+    author:
+      name: Jesse Duffield
+      background: 全栈开发者，开源社区活跃贡献者
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 键盘驱动，操作极快
+    - 交互式 rebase 可视化
+    - 轻量无依赖
+    disadvantages:
+    - 复杂操作仍需了解 Git 命令
+    solves:
+    - git 命令行操作繁琐
+    - GUI Git 客户端太重
+    install:
+      mac: brew install lazygit
+      windows: scoop install lazygit
+    tips:
+    - 配合 WezTerm 使用体验最佳
+    alternatives:
+    - GitKraken
+    - SourceTree
+    tags:
+    - 开源
+    - 免费
+    - Git
+    - 终端
+    - 推荐
+  - name: Regex101
+    url: https://regex101.com
+    desc: 正则表达式在线调试，实时高亮匹配，支持多语言引擎
+    opensource: false
+    license: 商业
+    country: 丹麦
+    platform:
+    - Web
+    first_release: '2013'
+    rating: A
+    author:
+      name: Firas Dib
+      background: 独立开发者
+    privacy: 4
+    usability: 5
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - 实时匹配高亮
+    - 支持多种正则引擎
+    - 自动生成代码片段
+    disadvantages:
+    - 需要联网使用
+    solves:
+    - 正则表达式调试困难
+    install:
+      web: 直接访问 regex101.com
+    alternatives:
+    - RegExr
+    tags:
+    - 免费
+    - 在线工具
+    - 正则
+- category: 浏览器
+  icon: 🦁
+  items:
+  - name: Brave
+    url: https://brave.com/zh/
+    github: https://github.com/brave/brave-browser
+    desc: 注重隐私的现代浏览器
+    opensource: true
+    license: MPL
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    first_release: '2016'
+    rating: S+
+    author:
+      name: Brendan Eich
+      background: JavaScript 发明者，Mozilla 联合创始人
+    privacy: 5
+    usability: 5
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 默认拦截广告和追踪器
+    - Chrome 扩展完全兼容
+    - 内置 Tor 模式
+    - 自带 AI 助手
+    disadvantages:
+    - 内置 Web3 功能较多
+    - 同步功能一般
+    solves:
+    - 广告过多
+    - 隐私泄露
+    - Chrome 依赖严重
+    install:
+      mac: brew install --cask brave-browser
+      windows: winget install Brave.Brave
+    tips:
+    - 首次安装建议关闭奖励系统
+    - 开启严格隐私模式
+    alternatives:
+    - Zen Browser
+    - Firefox
+    tags:
+    - 开源
+    - 免费
+    - 隐私
+    - 跨平台
+    - 推荐
+  - name: Zen Browser
+    url: https://zen-browser.app
+    github: https://github.com/zen-browser/desktop
+    desc: 极简界面的 Firefox 内核浏览器
+    opensource: true
+    license: MPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2023'
+    rating: S
+    author:
+      name: Zen Browser Team
+      background: 社区驱动的开源项目
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 垂直标签栏设计
+    - 侧边工作区管理
+    - Firefox 扩展兼容
+    - 极简美学
+    disadvantages:
+    - 基于 Firefox，部分网站兼容性
+    - 社区较小
+    solves:
+    - 标签页管理混乱
+    - 浏览器界面过于复杂
+    install:
+      windows: winget install Zen-Team.Zen-Browser
+    tips:
+    - 试试垂直标签栏 + 工作区功能
+    alternatives:
+    - Brave
+    - Firefox
+    tags:
+    - 开源
+    - 免费
+    - 隐私
+    - 极简
+    - 推荐
+  - name: Mullvad Browser
+    url: https://mullvad.net/browser
+    desc: 由 Mullvad VPN 与 Tor 项目联合开发
+    opensource: true
+    license: MPL
+    country: 瑞典
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2023'
+    rating: A
+    author:
+      name: Mullvad VPN + Tor Project
+      background: 隐私安全领域顶级团队联合出品
+    privacy: 5
+    usability: 3
+    china_access: 2
+    maintenance: 4
+    advantages:
+    - 反指纹追踪
+    - Tor 级别隐私保护
+    - 不存储任何日志
+    disadvantages:
+    - 功能极简，无扩展支持
+    - 需配合 Mullvad VPN 使用最佳
+    solves:
+    - 浏览器指纹追踪
+    - 极端隐私需求
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - Tor Browser
+    tags:
+    - 开源
+    - 免费
+    - 隐私
+- category: 图像处理
+  icon: 🎨
+  items:
+  - name: ArcBrush
+    url: https://arcbrush.com/
+    desc: 节点式修图工具
+    opensource: false
+    license: 商业
+    country: 中国
+    platform:
+    - macOS
+    - Windows
+    first_release: '2024'
+    rating: A
+    author:
+      name: ArcBrush Team
+      background: 国内独立开发团队
+    privacy: 3
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 节点式非破坏性编辑
+    - 界面现代直观
+    - 适合设计师和摄影师
+    disadvantages:
+    - 商业软件，需付费
+    - 功能还在持续迭代
+    solves:
+    - Photoshop 太重太贵
+    - 传统修图流程不直观
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - GIMP
+    tags:
+    - 付费
+    - 设计
+    - 修图
+  - name: Upscayl
+    url: https://upscayl.org
+    github: https://github.com/upscayl/upscayl
+    desc: AI 图片无损放大，本地运行
+    opensource: true
+    license: AGPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2023'
+    rating: S
+    author:
+      name: Upscayl Team
+      background: 开源 AI 图像处理社区
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 完全本地运行，不上传图片
+    - 多种 AI 模型可选
+    - 批量处理
+    - 免费
+    disadvantages:
+    - 需要 GPU 加速才快
+    - 放大倍数有限
+    solves:
+    - 图片分辨率不够
+    - 在线放大工具隐私风险
+    install:
+      mac: brew install --cask upscayl
+      windows: winget install upscayl.upscayl
+    tips:
+    - 建议使用 NVIDIA GPU 获得最佳速度
+    alternatives:
+    - Topaz Gigapixel
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - 图像
+    - 推荐
+  - name: RapidRAW
+    url: https://github.com/CyberTimon/RapidRAW
+    github: https://github.com/CyberTimon/RapidRAW
+    desc: 轻量 GPU 加速 RAW 编辑器，界面简洁现代
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - macOS
+    - Windows
+    first_release: '2024'
+    rating: A
+    author:
+      name: CyberTimon
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - GPU 加速，处理速度快
+    - 界面简洁现代
+    - 轻量无多余功能
+    disadvantages:
+    - 功能不如 Lightroom 全面
+    - 社区较小
+    solves:
+    - Lightroom 订阅制太贵
+    - RAW 处理软件太重
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - Lightroom
+    - Darktable
+    tags:
+    - 开源
+    - 免费
+    - 摄影
+    - RAW
+  - name: remove.photos
+    url: https://remove.photos/zh-cn/
+    desc: 在线 AI 抠图，无需注册，免费下载高清透明图
+    opensource: false
+    license: 商业
+    country: 英国
+    platform:
+    - Web
+    first_release: '2018'
+    rating: A
+    author:
+      name: Kaleido AI
+      background: AI 图像处理公司
+    privacy: 3
+    usability: 5
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - 无需注册
+    - 免费下载高清结果
+    - AI 抠图质量高
+    disadvantages:
+    - 需要联网
+    - 批量处理需付费
+    solves:
+    - Photoshop 抠图太慢
+    - 在线抠图工具质量差
+    install:
+      web: 直接访问 remove.photos
+    alternatives:
+    - Photopea
+    tags:
+    - 免费
+    - 在线工具
+    - AI
+    - 抠图
+  - name: Squoosh
+    url: https://squoosh.app
+    github: https://github.com/nicedoc/squoosh
+    desc: Google 出品的在线图片压缩工具，实时对比画质与体积，本地处理不上传
+    opensource: true
+    license: Apache
+    country: 美国
+    platform:
+    - Web
+    first_release: '2018'
+    rating: S
+    author:
+      name: Google Chrome Labs
+      background: Google 前端实验室出品
+    privacy: 5
+    usability: 5
+    china_access: 3
+    maintenance: 4
+    advantages:
+    - 本地处理，不上传图片
+    - 实时对比画质与体积
+    - 多种编码器可选
+    disadvantages:
+    - 需要联网打开网页
+    - 高级功能需一定技术背景
+    solves:
+    - 图片压缩质量难控制
+    - 在线压缩工具隐私风险
+    install:
+      web: 直接访问 squoosh.app
+    tips:
+    - WebP 格式压缩比最佳
+    alternatives:
+    - TinyPNG
+    tags:
+    - 开源
+    - 免费
+    - Google
+    - 图片压缩
+    - 推荐
+  - name: ImageMagick
+    url: https://imagemagick.org
+    github: https://github.com/ImageMagick/ImageMagick
+    desc: 命令行图片处理工具，批量转换格式、调整尺寸、压缩质量，功能全面
+    opensource: true
+    license: Apache
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '1990'
+    rating: A
+    author:
+      name: ImageMagick Studio
+      background: 历史最悠久的开源图像处理项目
+    privacy: 5
+    usability: 2
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 命令行批量处理
+    - 支持几乎所有图片格式
+    - 功能极其全面
+    disadvantages:
+    - 命令行操作，学习曲线陡
+    - 无 GUI
+    solves:
+    - 批量图片处理
+    - 格式转换
+    install:
+      mac: brew install imagemagick
+      windows: winget install ImageMagick.ImageMagick
+    tips:
+    - 配合脚本实现自动化处理
+    alternatives:
+    - GraphicsMagick
+    tags:
+    - 开源
+    - 免费
+    - 命令行
+    - 图片处理
+- category: 下载工具
+  icon: ⬇️
+  items:
+  - name: MotrixNext
+    url: https://motrix-next.pages.dev/#
+    github: https://github.com/nicekid1/MotrixNext
+    desc: 全能下载管理器
+    opensource: true
+    license: MIT
+    country: 中国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2024'
+    rating: A
+    author:
+      name: nicekid1
+      background: Motrix 社区维护者
+    privacy: 4
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 支持 HTTP/BT/磁力
+    - 界面现代简洁
+    - Motrix 的活跃分支
+    disadvantages:
+    - 原版 Motrix 已停更
+    - 功能还在完善中
+    solves:
+    - 原版 Motrix 停更
+    - 需要统一的下载管理器
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - Aria2
+    tags:
+    - 开源
+    - 免费
+    - 下载
+  - name: AB Download
+    url: https://abdownloadmanager.com
+    github: https://github.com/amirhossein-abdollahi/AB-Download-Manager
+    desc: 开源多线程下载加速，速度最高提升500%
+    opensource: true
+    license: GPL
+    country: 伊朗
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2024'
+    rating: S
+    author:
+      name: Amirhossein Abdollahi
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 多线程加速，速度提升显著
+    - 现代界面设计
+    - 完全开源免费
+    disadvantages:
+    - 不支持 BT/磁力
+    - 功能相对单一
+    solves:
+    - 浏览器下载速度慢
+    - IDM 闭源付费
+    install:
+      windows: 官网下载安装包
+    tips:
+    - 配合浏览器扩展使用体验最佳
+    alternatives:
+    - IDM
+    - Motrix
+    tags:
+    - 开源
+    - 免费
+    - 下载
+    - 推荐
+- category: 视频处理
+  icon: 🎬
+  items:
+  - name: LosslessCut
+    url: https://github.com/mifi/lossless-cut
+    github: https://github.com/mifi/lossless-cut
+    desc: 无损视频剪切工具，不重新编码
+    opensource: true
+    license: MIT
+    country: 挪威
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2017'
+    rating: S+
+    author:
+      name: Mikael Finstad
+      background: 独立开发者，视频工具专家
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 无损剪切，不重新编码
+    - 处理速度极快
+    - 支持几乎所有格式
+    - 轻量无依赖
+    disadvantages:
+    - 不能添加特效或转码
+    solves:
+    - 视频剪切需要重新编码
+    - 剪辑软件太重
+    install:
+      mac: brew install --cask losslesscut
+      windows: winget install mifi.losslesscut
+    tips:
+    - 适合快速剪切录屏或会议录像
+    alternatives:
+    - HandBrake
+    tags:
+    - 开源
+    - 免费
+    - 视频
+    - 推荐
+  - name: OBS Studio
+    url: https://obsproject.com
+    github: https://github.com/obsproject/obs-studio
+    desc: 专业录屏与直播推流工具，跨平台开源
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2012'
+    rating: S+
+    author:
+      name: OBS Project
+      background: 全球最大的开源直播项目
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 功能全面专业
+    - 插件生态丰富
+    - 完全免费无水印
+    disadvantages:
+    - 设置较复杂
+    - 占用系统资源较高
+    solves:
+    - 商业录屏软件收费加水印
+    - 直播推流需求
+    install:
+      mac: brew install --cask obs
+      windows: winget install OBSProject.OBSStudio
+    tips:
+    - 简单录屏用"简单"输出模式
+    alternatives:
+    - ShareX
+    tags:
+    - 开源
+    - 免费
+    - 录屏
+    - 直播
+    - 推荐
+  - name: HandBrake
+    url: https://handbrake.fr
+    github: https://github.com/HandBrake/HandBrake
+    desc: 开源视频转码压制工具，支持 AV1/H.265/H.264，跨平台免费
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2003'
+    rating: S
+    author:
+      name: HandBrake Team
+      background: 历史悠久的开源视频转码项目
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 支持 AV1/H.265/H.264
+    - 硬件加速编码
+    - 预设丰富
+    disadvantages:
+    - 界面略显老旧
+    - 高级参数需一定知识
+    solves:
+    - 视频格式转换
+    - 视频体积压缩
+    install:
+      mac: brew install --cask handbrake
+      windows: winget install HandBrake.HandBrake
+    tips:
+    - 使用 Web 预设可在体积和质量间取得平衡
+    alternatives:
+    - FFmpeg
+    - Shutter Encoder
+    tags:
+    - 开源
+    - 免费
+    - 视频
+    - 转码
+    - 推荐
+  - name: MediaInfo
+    url: https://mediaarea.net/en/MediaInfo
+    desc: 视频与音频文件技术参数查看工具，编码、码率、色彩空间等信息一览无余
+    opensource: true
+    license: BSD
+    country: 法国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2002'
+    rating: A
+    author:
+      name: MediaArea
+      background: 专业媒体分析工具开发商
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 查看详细技术参数
+    - 支持几乎所有格式
+    - 轻量快速
+    disadvantages:
+    - 仅查看参数，不能编辑
+    solves:
+    - 需要查看视频编码信息
+    - 确认视频参数是否符合要求
+    install:
+      mac: brew install mediainfo
+      windows: winget install MediaArea.MediaInfo
+    alternatives:
+    - FFprobe
+    tags:
+    - 开源
+    - 免费
+    - 视频
+    - 分析
+  - name: CompressO
+    url: https://compresso.codeforreal.com/
+    github: https://github.com/nicedoc/compresso
+    desc: 跨平台视频与图片压缩工具，FFmpeg 驱动，本地运行不上传，支持批量处理
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2024'
+    rating: A
+    author:
+      name: CodeForReal
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 本地运行不上传
+    - 支持视频和图片
+    - 批量处理
+    disadvantages:
+    - 需要 FFmpeg
+    - 功能较新，可能不稳定
+    solves:
+    - 需要一个统一的压缩工具
+    - 在线压缩隐私风险
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - HandBrake
+    tags:
+    - 开源
+    - 免费
+    - 压缩
+- category: 视频播放
+  icon: 🎞️
+  items:
+  - name: mpv
+    url: https://mpv.io
+    github: https://github.com/mpv-player/mpv
+    desc: 轻量高性能的命令行视频播放器，支持脚本扩展，GPU 解码，几乎兼容所有格式
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2013'
+    rating: S+
+    author:
+      name: mpv Project
+      background: mplayer2 的现代分支
+    privacy: 5
+    usability: 3
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - GPU 硬件解码
+    - 几乎兼容所有格式
+    - 极轻量，启动快
+    - 脚本扩展性强
+    disadvantages:
+    - 无 GUI，纯命令行
+    - 配置需手动编辑文件
+    solves:
+    - 播放器太重太慢
+    - 特殊格式无法播放
+    install:
+      mac: brew install mpv
+      windows: winget install mpv.net
+    tips:
+    - 推荐使用 mpv.net（Windows GUI 封装）
+    alternatives:
+    - VLC
+    - MPC-HC
+    tags:
+    - 开源
+    - 免费
+    - 视频
+    - 极简
+    - 推荐
+  - name: Screenbox
+    url: https://github.com/huynhsontung/Screenbox
+    github: https://github.com/huynhsontung/Screenbox
+    desc: 基于 libVLC 的现代 Windows 视频播放器，界面简洁流畅，支持网络串流
+    opensource: true
+    license: GPL
+    country: 越南
+    platform:
+    - Windows
+    first_release: '2023'
+    rating: A
+    author:
+      name: Huynh Son Tung
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 现代简洁界面
+    - 支持网络串流
+    - 基于 VLC 内核
+    disadvantages:
+    - 仅支持 Windows
+    - 功能相对简单
+    solves:
+    - Windows 没有好用的现代播放器
+    - 需要播放网络串流
+    install:
+      windows: winget install TungHuynh.Screenbox
+    alternatives:
+    - mpv.net
+    - VLC
+    tags:
+    - 开源
+    - 免费
+    - Windows
+    - 视频
+- category: 设计
+  icon: ✏️
+  items:
+  - name: Penpot
+    url: https://penpot.app
+    github: https://github.com/penpot/penpot
+    desc: 开源 Figma 替代，可自托管
+    opensource: true
+    license: MPL
+    country: 西班牙
+    platform:
+    - Web
+    first_release: '2022'
+    rating: S
+    author:
+      name: Kaleidos
+      background: 西班牙开源设计公司
+    privacy: 5
+    usability: 4
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 完全开源可自托管
+    - SVG 原生支持
+    - 支持实时协作
+    disadvantages:
+    - 功能不如 Figma 丰富
+    - 社区模板较少
+    solves:
+    - Figma 收费和隐私担忧
+    - 需要自托管设计工具
+    install:
+      web: 直接访问 penpot.app
+    tips:
+    - 可以 Docker 自托管
+    alternatives:
+    - Figma
+    - Excalidraw
+    tags:
+    - 开源
+    - 免费
+    - 设计
+    - 协作
+    - 推荐
+  - name: Excalidraw
+    url: https://excalidraw.com
+    github: https://github.com/excalidraw/excalidraw
+    desc: 手绘风格白板工具
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - Web
+    first_release: '2020'
+    rating: S
+    author:
+      name: Excalidraw Team
+      background: 开源白板社区
+    privacy: 5
+    usability: 5
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 手绘风格，表达力强
+    - 完全免费开源
+    - 支持实时协作
+    - 端对端加密
+    disadvantages:
+    - 不适合精确设计
+    - 功能相对简单
+    solves:
+    - 快速画图表达想法
+    - PPT 太正式不够灵活
+    install:
+      web: 直接访问 excalidraw.com
+    tips:
+    - 可以导出为 SVG
+    alternatives:
+    - tldraw
+    - Miro
+    tags:
+    - 开源
+    - 免费
+    - 白板
+    - 推荐
+- category: 系统工具
+  icon: ⚙️
+  items:
+  - name: Everything
+    url: https://voidtools.com
+    desc: Windows 文件秒搜
+    opensource: false
+    license: 商业免费
+    country: 加拿大
+    platform:
+    - Windows
+    first_release: '2006'
+    rating: S+
+    author:
+      name: David Carpenter
+      background: 独立开发者，Windows 工具专家
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 搜索速度极快，毫秒级
+    - 支持正则和高级查询
+    - 轻量无后台
+    disadvantages:
+    - 仅支持 Windows
+    - 仅搜索文件名（可装插件搜内容）
+    solves:
+    - Windows 自带搜索太慢
+    - 找文件效率低
+    install:
+      windows: winget install voidtools.Everything
+    tips:
+    - 配合 HTTP Server 可远程搜索
+    alternatives:
+    - Listary
+    tags:
+    - 免费
+    - Windows
+    - 搜索
+    - 推荐
+  - name: Flow Launcher
+    url: https://flowlauncher.com
+    github: https://github.com/Flow-Launcher/Flow.Launcher
+    desc: Windows 快速启动工具
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - Windows
+    first_release: '2019'
+    rating: S
+    author:
+      name: Flow Launcher Team
+      background: 社区驱动的开源项目
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 插件生态丰富
+    - 支持计算器、翻译等
+    - 快速启动应用和文件
+    disadvantages:
+    - 仅支持 Windows
+    - 插件质量参差不齐
+    solves:
+    - Windows 启动效率低
+    - 需要快速打开应用
+    install:
+      windows: winget install Flow-Launcher.Flow-Launcher
+    tips:
+    - 安装常用插件提升效率
+    alternatives:
+    - PowerToys Run
+    - uTools
+    tags:
+    - 开源
+    - 免费
+    - Windows
+    - 效率
+    - 推荐
+  - name: Flameshot
+    url: https://flameshot.org
+    github: https://github.com/flameshot-org/flameshot
+    desc: 跨平台开源截图工具，支持标注与上传
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2017'
+    rating: A
+    author:
+      name: Flameshot Org
+      background: 开源截图工具社区
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 截图后直接标注
+    - 支持上传到图床
+    - 跨平台
+    disadvantages:
+    - Windows 版功能不如 Linux
+    - 界面略显老旧
+    solves:
+    - 系统截图工具功能弱
+    - 需要截图标注
+    install:
+      mac: brew install --cask flameshot
+      windows: winget install Flameshot.Flameshot
+    alternatives:
+    - ShareX
+    - Snipaste
+    tags:
+    - 开源
+    - 免费
+    - 截图
+  - name: Scoop
+    url: https://scoop.sh
+    github: https://github.com/ScoopInstaller/Scoop
+    desc: Windows 命令行包管理器
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - Windows
+    first_release: '2015'
+    rating: S
+    author:
+      name: Scoop Installer Team
+      background: 社区驱动的 Windows 包管理项目
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 不需要管理员权限
+    - 一条命令安装软件
+    - 环境隔离干净
+    disadvantages:
+    - 部分软件不在仓库中
+    - GUI 软件支持一般
+    solves:
+    - Windows 软件管理混乱
+    - 安装卸载不干净
+    install:
+      windows: |
+        irm get.scoop.sh | iex
+    tips:
+    - 添加 extras bucket 获取更多软件
+    alternatives:
+    - Chocolatey
+    - winget
+    tags:
+    - 开源
+    - 免费
+    - Windows
+    - 包管理
+    - 推荐
+  - name: CrystalDiskInfo
+    url: https://crystalmark.info/en/software/crystaldiskinfo/
+    desc: 硬盘健康状态与 S.M.A.R.T. 监控工具
+    opensource: true
+    license: MIT
+    country: 日本
+    platform:
+    - Windows
+    first_release: '2008'
+    rating: A
+    author:
+      name: Crystal Dew World
+      background: 日本开源硬件工具开发者
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 直观显示硬盘健康状态
+    - 支持 S.M.A.R.T. 详细信息
+    - 轻量无后台
+    disadvantages:
+    - 仅支持 Windows
+    - 仅监控不修复
+    solves:
+    - 需要了解硬盘健康状态
+    - 预防硬盘故障
+    install:
+      windows: winget install CrystalDewWorld.CrystalDiskInfo
+    alternatives:
+    - CrystalDiskMark
+    tags:
+    - 开源
+    - 免费
+    - Windows
+    - 硬盘
+  - name: WindowsCleaner
+    url: https://github.com/ElectroHeavenVN/WindowsCleaner
+    github: https://github.com/ElectroHeavenVN/WindowsCleaner
+    desc: 开源 Windows 垃圾清理工具，清除系统缓存、临时文件与无用注册表项
+    opensource: true
+    license: MIT
+    country: 越南
+    platform:
+    - Windows
+    first_release: '2024'
+    rating: B
+    author:
+      name: ElectroHeavenVN
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 3
+    advantages:
+    - 开源透明
+    - 清理系统垃圾
+    - 界面简洁
+    disadvantages:
+    - 功能不如 CCleaner 全面
+    - 项目较新
+    solves:
+    - CCleaner 闭源有广告
+    - 需要清理系统垃圾
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - BleachBit
+    tags:
+    - 开源
+    - 免费
+    - Windows
+    - 清理
+- category: 翻译工具
+  icon: 🌐
+  items:
+  - name: 欧路词典
+    url: https://www.eudic.net
+    desc: 专业英汉词典，支持本地词库
+    opensource: false
+    license: 商业免费
+    country: 中国
+    platform:
+    - macOS
+    - Windows
+    - Android
+    - iOS
+    first_release: '2010'
+    rating: A
+    author:
+      name: 欧路词典团队
+      background: 国内专业词典软件开发商
+    privacy: 4
+    usability: 5
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 词库丰富专业
+    - 支持本地离线使用
+    - 跨平台同步
+    disadvantages:
+    - 部分高级功能需付费
+    - 有广告
+    solves:
+    - 需要专业词典
+    - 离线查词需求
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - GoldenDict
+    tags:
+    - 免费
+    - 词典
+    - 翻译
+  - name: 沙拉翻译
+    url: https://saladict.net/
+    github: https://github.com/crimx/ext-saladict
+    desc: 浏览器划词翻译，可同步至欧路词典
+    opensource: true
+    license: MIT
+    country: 中国
+    platform:
+    - Web
+    - macOS
+    - Windows
+    first_release: '2017'
+    rating: S
+    author:
+      name: crimx
+      background: 独立开源开发者
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 划词即翻译
+    - 支持多种翻译引擎
+    - 可同步欧路词典学习记录
+    disadvantages:
+    - 浏览器扩展有时被更新影响
+    solves:
+    - 阅读外文需要频繁查词
+    - 划词翻译需求
+    install:
+      web: 浏览器扩展商店安装
+    tips:
+    - 配合欧路词典使用效果最佳
+    alternatives:
+    - 划词翻译
+    tags:
+    - 开源
+    - 免费
+    - 翻译
+    - 浏览器扩展
+    - 推荐
+- category: 文件同步
+  icon: 🔄
+  items:
+  - name: Syncthing
+    url: https://syncthing.net
+    github: https://github.com/syncthing/syncthing
+    desc: 设备间直接同步，不经过任何服务器
+    opensource: true
+    license: MPL
+    country: 国际
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    first_release: '2013'
+    rating: S+
+    author:
+      name: The Syncthing Project
+      background: 社区驱动的去中心化同步项目
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - P2P 直连，不经服务器
+    - 端对端加密
+    - 完全免费无限制
+    - 跨平台
+    disadvantages:
+    - 初始配置需要一定技术背景
+    - 无 GUI，Web 界面管理
+    solves:
+    - 云盘隐私风险
+    - 需要设备间直接同步
+    install:
+      mac: brew install syncthing
+      windows: winget install Syncthing.Syncthing
+    tips:
+    - 手机端推荐 Syncthing-Android
+    alternatives:
+    - Resilio Sync
+    tags:
+    - 开源
+    - 免费
+    - 同步
+    - 隐私
+    - 推荐
+  - name: LocalSend
+    url: https://localsend.org
+    github: https://github.com/localsend/localsend
+    desc: 局域网内跨设备传文件，无需联网
+    opensource: true
+    license: Apache
+    country: 澳大利亚
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    first_release: '2022'
+    rating: S
+    author:
+      name: Tien Do Nam
+      background: 独立开源开发者
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 局域网直传，无需联网
+    - 跨平台支持
+    - 界面简洁现代
+    disadvantages:
+    - 需要在同一局域网
+    - 不支持远程传输
+    solves:
+    - 跨设备传文件麻烦
+    - 微信传文件压缩画质
+    install:
+      mac: brew install --cask localsend
+      windows: winget install LocalSend.LocalSend
+    tips:
+    - 所有设备都安装 LocalSend 体验最佳
+    alternatives:
+    - Snapdrop
+    - AirDrop
+    tags:
+    - 开源
+    - 免费
+    - 传输
+    - 局域网
+    - 推荐
+- category: 输入法
+  icon: ⌨️
+  items:
+  - name: 清风输入法
+    url: https://huanfeng.github.io/WindInput/
+    github: https://github.com/huanfeng/WindInput
+    desc: 简洁轻量的输入法
+    opensource: true
+    license: GPL
+    country: 中国
+    platform:
+    - Windows
+    first_release: '2023'
+    rating: A
+    author:
+      name: huanfeng
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 开源无广告
+    - 界面简洁
+    - 轻量无后台
+    disadvantages:
+    - 仅支持 Windows
+    - 词库不如大厂丰富
+    solves:
+    - 输入法广告多
+    - 输入法隐私泄露
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - 微信输入法
+    tags:
+    - 开源
+    - 免费
+    - 输入法
+- category: 邮箱
+  icon: 📬
+  items:
+  - name: Outlook
+    url: https://outlook.com
+    desc: 微软邮箱，功能全面
+    opensource: false
+    license: 商业
+    country: 美国
+    platform:
+    - Web
+    - macOS
+    - Windows
+    - Android
+    - iOS
+    first_release: '2012'
+    rating: A
+    author:
+      name: Microsoft
+      background: 微软官方邮箱服务
+    privacy: 3
+    usability: 5
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 功能全面
+    - 与 Office 生态集成
+    - 免费容量大
+    disadvantages:
+    - 隐私保护一般
+    - 国内访问不稳定
+    solves:
+    - 需要一个功能全面的邮箱
+    - Office 生态集成需求
+    install:
+      web: 直接访问 outlook.com
+    alternatives:
+    - Gmail
+    tags:
+    - 免费
+    - 邮箱
+  - name: Proton Mail
+    url: https://proton.me
+    github: https://github.com/ProtonMail
+    desc: 端对端加密，瑞士服务器
+    opensource: true
+    license: GPL
+    country: 瑞士
+    platform:
+    - Web
+    - macOS
+    - Windows
+    - Android
+    - iOS
+    first_release: '2014'
+    rating: S+
+    author:
+      name: Proton AG
+      background: CERN 科学家团队创立
+    privacy: 5
+    usability: 4
+    china_access: 2
+    maintenance: 5
+    advantages:
+    - 端对端加密
+    - 瑞士隐私法律保护
+    - 开源可审计
+    disadvantages:
+    - 免费版容量有限
+    - 国内访问困难
+    solves:
+    - 邮件隐私安全
+    - 需要加密邮箱
+    install:
+      web: 直接访问 proton.me
+    tips:
+    - 免费版 500MB，付费版更实用
+    alternatives:
+    - Tuta Mail
+    tags:
+    - 开源
+    - 免费
+    - 邮箱
+    - 加密
+    - 隐私
+    - 推荐
+  - name: Tuta Mail
+    url: https://tuta.com
+    github: https://github.com/tutao/tutanota
+    desc: 德国团队，连元数据都加密
+    opensource: true
+    license: GPL
+    country: 德国
+    platform:
+    - Web
+    - macOS
+    - Windows
+    - Android
+    - iOS
+    first_release: '2011'
+    rating: S
+    author:
+      name: Tuta Team
+      background: 德国隐私邮箱先驱
+    privacy: 5
+    usability: 4
+    china_access: 2
+    maintenance: 5
+    advantages:
+    - 元数据也加密
+    - 完全匿名注册
+    - 开源可审计
+    disadvantages:
+    - 免费版功能限制多
+    - 国内访问困难
+    solves:
+    - 连邮件元数据都要保护
+    - 极端隐私需求
+    install:
+      web: 直接访问 tuta.com
+    alternatives:
+    - Proton Mail
+    tags:
+    - 开源
+    - 免费
+    - 邮箱
+    - 加密
+    - 隐私
+- category: 密码管理
+  icon: 🔐
+  items:
+  - name: Bitwarden
+    url: https://bitwarden.com
+    github: https://github.com/bitwarden
+    desc: 最好的开源密码管理器，可自托管
+    opensource: true
+    license: AGPL
+    country: 美国
+    platform:
+    - Web
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    - 浏览器扩展
+    first_release: '2016'
+    rating: S+
+    author:
+      name: Bitwarden Inc.
+      background: 最受信任的开源密码管理器
+    privacy: 5
+    usability: 5
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 完全开源可审计
+    - 支持自托管
+    - 跨平台全浏览器支持
+    - 免费版功能够用
+    disadvantages:
+    - 自托管需要技术能力
+    - 免费版不支持高级 2FA
+    solves:
+    - 密码记忆困难
+    - 密码重复使用风险
+    install:
+      mac: brew install --cask bitwarden
+      windows: winget install Bitwarden.Bitwarden
+    tips:
+    - 推荐开启两步验证保护密码库
+    alternatives:
+    - 1Password
+    - KeePass
+    tags:
+    - 开源
+    - 免费
+    - 密码
+    - 安全
+    - 推荐
+  - name: Keyguard
+    url: https://github.com/AChep/keyguard-app
+    github: https://github.com/AChep/keyguard-app
+    desc: Bitwarden 第三方客户端，界面更现代
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Windows
+    first_release: '2023'
+    rating: A
+    author:
+      name: Alexander Chepurnoy
+      background: 独立开源开发者
+    privacy: 5
+    usability: 5
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 现代界面设计
+    - 兼容 Bitwarden 服务器
+    - 完全开源
+    disadvantages:
+    - 非官方客户端
+    - 部分功能可能滞后
+    solves:
+    - Bitwarden 官方客户端界面老旧
+    - 需要更现代的密码管理体验
+    install:
+      android: Google Play 或 F-Droid
+    tips:
+    - 可直接连接 Bitwarden 服务器
+    alternatives:
+    - Bitwarden
+    tags:
+    - 开源
+    - 免费
+    - 密码
+- category: 双因素认证
+  icon: 🔑
+  items:
+  - name: Aegis
+    url: https://getaegis.app
+    github: https://github.com/beemdevelopment/Aegis
+    desc: Android 上最好的开源 2FA 应用
+    opensource: true
+    license: GPL
+    country: 荷兰
+    platform:
+    - Android
+    first_release: '2018'
+    rating: S+
+    author:
+      name: beemdevelopment
+      background: 荷兰开源安全开发者
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 完全开源
+    - 支持加密备份
+    - 界面简洁
+    - 无广告
+    disadvantages:
+    - 仅支持 Android
+    - 无 iOS 版本
+    solves:
+    - Google Authenticator 功能简陋
+    - 2FA 应用不开源
+    install:
+      android: F-Droid 或 Google Play
+    tips:
+    - 定期加密备份到本地
+    alternatives:
+    - 2FAS
+    - Ente Auth
+    tags:
+    - 开源
+    - 免费
+    - 2FA
+    - 安全
+    - 推荐
+  - name: 2FAS
+    url: https://2fas.com
+    github: https://github.com/two-factor-auth/2fas
+    desc: 跨平台 2FA，支持浏览器扩展
+    opensource: true
+    license: GPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - 浏览器扩展
+    first_release: '2020'
+    rating: S
+    author:
+      name: 2FAS Team
+      background: 开源安全认证项目
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 跨平台支持
+    - 浏览器扩展自动填充
+    - 加密备份
+    disadvantages:
+    - 桌面端功能有限
+    solves:
+    - 需要跨平台 2FA
+    - 浏览器自动填充 OTP
+    install:
+      android: Google Play
+    tips:
+    - 配合浏览器扩展体验最佳
+    alternatives:
+    - Aegis
+    - Ente Auth
+    tags:
+    - 开源
+    - 免费
+    - 2FA
+    - 跨平台
+    - 推荐
+  - name: Ente Auth
+    url: https://ente.io/auth
+    github: https://github.com/ente-io/ente
+    desc: 端对端加密的跨平台 2FA，支持云备份
+    opensource: true
+    license: AGPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Windows
+    - Web
+    first_release: '2023'
+    rating: S
+    author:
+      name: Ente Inc.
+      background: 端对端加密服务公司
+    privacy: 5
+    usability: 5
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 端对端加密云备份
+    - 跨平台支持
+    - 界面现代
+    disadvantages:
+    - 国内访问不稳定
+    solves:
+    - 2FA 换手机迁移困难
+    - 需要加密的 2FA 云备份
+    install:
+      web: 直接访问 ente.io/auth
+    alternatives:
+    - Aegis
+    - 2FAS
+    tags:
+    - 开源
+    - 免费
+    - 2FA
+    - 加密
+- category: 办公
+  icon: 📄
+  items:
+  - name: OnlyOffice
+    url: https://www.onlyoffice.com
+    github: https://github.com/nicedoc/ONLYOFFICE
+    desc: 全平台开源办公套件，兼容 Office 格式
+    opensource: true
+    license: AGPL
+    country: 美国
+    platform:
+    - Web
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    first_release: '2014'
+    rating: A
+    author:
+      name: ONLYOFFICE
+      background: 开源办公套件开发商
+    privacy: 4
+    usability: 4
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 兼容 Office 格式
+    - 支持实时协作
+    - 可自托管
+    disadvantages:
+    - 功能不如 MS Office 丰富
+    - 大文档性能一般
+    solves:
+    - MS Office 太贵
+    - 需要开源办公套件
+    install:
+      mac: brew install --cask onlyoffice
+      windows: winget install ONLYOFFICE.DesktopEditors
+    alternatives:
+    - LibreOffice
+    - WPS
+    tags:
+    - 开源
+    - 免费
+    - 办公
+- category: 笔记
+  icon: 📝
+  items:
+  - name: Notesnook
+    url: https://notesnook.com
+    github: https://github.com/nicedoc/notesnook
+    desc: 端对端加密笔记，注重隐私
+    opensource: true
+    license: GPL
+    country: 巴基斯坦
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Linux
+    - Windows
+    - Web
+    first_release: '2021'
+    rating: S
+    author:
+      name: Notesnook
+      background: 隐私优先的笔记应用开发商
+    privacy: 5
+    usability: 4
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 端对端加密
+    - 富文本编辑
+    - 跨平台
+    disadvantages:
+    - 国内访问不稳定
+    - 社区较小
+    solves:
+    - 笔记隐私安全
+    - Notion 等平台隐私担忧
+    install:
+      web: 直接访问 notesnook.com
+    alternatives:
+    - Obsidian
+    - Joplin
+    tags:
+    - 开源
+    - 免费
+    - 笔记
+    - 加密
+    - 推荐
+  - name: Tolaria
+    url: https://tolaria.md/
+    github: https://github.com/nicedoc/tolaria
+    desc: 本地优先的卡片式笔记工具
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - Web
+    first_release: '2024'
+    rating: A
+    author:
+      name: Tolaria Team
+      background: 独立开源项目
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - 本地优先
+    - 卡片式组织
+    - Markdown 支持
+    disadvantages:
+    - 功能较新
+    - 社区较小
+    solves:
+    - 笔记工具太复杂
+    - 需要轻量笔记
+    install:
+      web: 直接访问 tolaria.md
+    alternatives:
+    - Obsidian
+    - Notesnook
+    tags:
+    - 开源
+    - 免费
+    - 笔记
+  - name: Obsidian
+    url: https://obsidian.md
+    desc: 本地优先的知识库与笔记工具，支持 Markdown
+    opensource: false
+    license: 商业免费
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    - Android
+    - iOS
+    first_release: '2020'
+    rating: S
+    author:
+      name: Obsidian
+      background: 由 Erica 和 Shida 夫妻创立
+    privacy: 4
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 本地 Markdown 文件
+    - 插件生态极其丰富
+    - 双向链接知识图谱
+    disadvantages:
+    - 同步服务需付费
+    - 插件过多可能影响性能
+    solves:
+    - 笔记被平台锁定
+    - 需要知识管理
+    install:
+      mac: brew install --cask obsidian
+      windows: winget install Obsidian.Obsidian
+    tips:
+    - 使用 Syncthing 替代官方同步
+    alternatives:
+    - Logseq
+    - Notesnook
+    tags:
+    - 免费
+    - 笔记
+    - Markdown
+    - 知识管理
+    - 推荐
+- category: 加密云盘
+  icon: ☁️
+  items:
+  - name: Ente
+    url: https://ente.io
+    github: https://github.com/ente-io/ente
+    desc: 端对端加密的照片与视频存储服务
+    opensource: true
+    license: AGPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Windows
+    - Web
+    first_release: '2022'
+    rating: S+
+    author:
+      name: Ente Inc.
+      background: 端对端加密服务公司
+    privacy: 5
+    usability: 5
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 端对端加密
+    - 免费容量大
+    - 界面现代
+    disadvantages:
+    - 国内访问不稳定
+    solves:
+    - Google Photos 隐私担忧
+    - iCloud 不支持 Android
+    install:
+      web: 直接访问 ente.io
+    tips:
+    - 免费版提供 5GB 存储
+    alternatives:
+    - Google Photos
+    - Immich
+    tags:
+    - 开源
+    - 免费
+    - 云盘
+    - 加密
+    - 照片
+    - 推荐
+  - name: Ente Locker
+    url: https://ente.com/locker
+    github: https://github.com/ente-io/ente
+    desc: 端对端加密的文档保险箱，支持紧急联系人移交
+    opensource: true
+    license: AGPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Windows
+    - Web
+    first_release: '2024'
+    rating: A
+    author:
+      name: Ente Inc.
+      background: 端对端加密服务公司
+    privacy: 5
+    usability: 4
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 端对端加密
+    - 紧急联系人移交功能
+    - 与 Ente 生态集成
+    disadvantages:
+    - 国内访问不稳定
+    - 功能较新
+    solves:
+    - 重要文档加密存储
+    - 紧急情况资料移交
+    install:
+      web: 直接访问 ente.com/locker
+    alternatives:
+    - Bitwarden
+    tags:
+    - 开源
+    - 免费
+    - 加密
+    - 文档
+  - name: Filen
+    url: https://filen.io
+    github: https://github.com/FilenCloudDienste/filen-drive
+    desc: 德国端对端加密云盘，可同步任意文件
+    opensource: true
+    license: AGPL
+    country: 德国
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Linux
+    - Windows
+    - Web
+    first_release: '2020'
+    rating: A
+    author:
+      name: Filen GmbH
+      background: 德国加密云盘公司
+    privacy: 5
+    usability: 4
+    china_access: 2
+    maintenance: 5
+    advantages:
+    - 端对端加密
+    - 德国隐私法律保护
+    - 支持文件同步
+    disadvantages:
+    - 免费版容量有限
+    - 国内访问困难
+    solves:
+    - Dropbox 隐私担忧
+    - 需要加密云盘
+    install:
+      web: 直接访问 filen.io
+    alternatives:
+    - Proton Drive
+    - Tresorit
+    tags:
+    - 开源
+    - 免费
+    - 云盘
+    - 加密
+- category: 效率工具
+  icon: ⏱️
+  items:
+  - name: Super Productivity
+    url: https://super-productivity.com
+    github: https://github.com/nicedoc/super-productivity
+    desc: 本地优先的任务管理与时间追踪，支持 Jira/GitHub/GitLab 集成
+    opensource: true
+    license: MIT
+    country: 德国
+    platform:
+    - Web
+    - Android
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2019'
+    rating: A
+    author:
+      name: Johannes Millan
+      background: 独立开源开发者
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 本地优先，数据不上传
+    - 集成 Jira/GitHub/GitLab
+    - 时间追踪功能
+    disadvantages:
+    - 界面功能较多
+    - 移动端体验一般
+    solves:
+    - 任务管理工具太重
+    - 需要时间追踪
+    install:
+      mac: brew install --cask superproductivity
+      windows: winget install super-productivity.SuperProductivity
+    alternatives:
+    - Todoist
+    - TickTick
+    tags:
+    - 开源
+    - 免费
+    - 效率
+    - 任务管理
+  - name: ActivityWatch
+    url: https://activitywatch.net
+    github: https://github.com/ActivityWatch/activitywatch
+    desc: 自动记录应用与网页使用时间，数据完全本地，开源无云
+    opensource: true
+    license: MPL
+    country: 挪威
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2017'
+    rating: A
+    author:
+      name: ActivityWatch Team
+      background: 挪威开源时间追踪项目
+    privacy: 5
+    usability: 3
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 数据完全本地
+    - 自动记录
+    - 开源透明
+    disadvantages:
+    - 配置较复杂
+    - 界面不够现代
+    solves:
+    - RescueTime 隐私担忧
+    - 需要了解时间花在哪里
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - RescueTime
+    tags:
+    - 开源
+    - 免费
+    - 时间追踪
+- category: 学习工具
+  icon: 📖
+  items:
+  - name: TypeWords
+    url: https://typewords.cc
+    desc: 以打字输入为核心的英语记忆系统，FSRS 间隔复习，数据本地存储
+    opensource: true
+    license: MIT
+    country: 中国
+    platform:
+    - Web
+    first_release: '2024'
+    rating: A
+    author:
+      name: TypeWords Team
+      background: 国内独立开发团队
+    privacy: 5
+    usability: 4
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 打字即记忆
+    - FSRS 科学复习算法
+    - 数据本地存储
+    disadvantages:
+    - 功能较新
+    - 词库有限
+    solves:
+    - 背单词效率低
+    - 传统背词方式枯燥
+    install:
+      web: 直接访问 typewords.cc
+    alternatives:
+    - Anki
+    tags:
+    - 开源
+    - 免费
+    - 英语
+    - 学习
+  - name: Exercism
+    url: https://exercism.org
+    github: https://github.com/exercism
+    desc: 编程练习平台，有真人 mentor 异步代码评审，Python 轨道质量高
+    opensource: true
+    license: MIT
+    country: 英国
+    platform:
+    - Web
+    first_release: '2013'
+    rating: S
+    author:
+      name: Exercism
+      background: 全球开源编程学习平台
+    privacy: 4
+    usability: 5
+    china_access: 4
+    maintenance: 5
+    advantages:
+    - 真人代码评审
+    - 48+ 语言轨道
+    - 完全免费
+    disadvantages:
+    - 国内访问偶尔不稳定
+    solves:
+    - LeetCode 太算法导向
+    - 需要系统学习编程语言
+    install:
+      web: 直接访问 exercism.org
+    tips:
+    - 推荐从 Python 轨道开始
+    alternatives:
+    - Codewars
+    - LeetCode
+    tags:
+    - 开源
+    - 免费
+    - 编程
+    - 学习
+    - 推荐
+  - name: Codewars
+    url: https://www.codewars.com
+    desc: 编程闯关练习，题目有趣，适合练语言本身而非刷算法
+    opensource: false
+    license: 商业免费
+    country: 美国
+    platform:
+    - Web
+    first_release: '2012'
+    rating: A
+    author:
+      name: Codewars
+      background: 社区驱动的编程挑战平台
+    privacy: 3
+    usability: 5
+    china_access: 5
+    maintenance: 4
+    advantages:
+    - 游戏化闯关
+    - 题目有趣实用
+    - 多语言支持
+    disadvantages:
+    - 高级题目质量参差
+    - 社区活跃度下降
+    solves:
+    - 编程练习太枯燥
+    - 巩固语言基础
+    install:
+      web: 直接访问 codewars.com
+    alternatives:
+    - Exercism
+    - LeetCode
+    tags:
+    - 免费
+    - 编程
+    - 练习
+- category: 本地 AI
+  icon: 🤖
+  items:
+  - name: Ollama
+    url: https://ollama.com
+    github: https://github.com/ollama/ollama
+    desc: 本地 LLM 运行时，一条命令拉模型，提供 OpenAI 兼容 API
+    opensource: true
+    license: MIT
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2023'
+    rating: S+
+    author:
+      name: Ollama
+      background: 本地 AI 推理基础设施公司
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 一条命令运行模型
+    - OpenAI 兼容 API
+    - 支持多种模型
+    - 完全本地运行
+    disadvantages:
+    - 需要较好的硬件
+    - 大模型需要大量内存
+    solves:
+    - 本地运行 AI 模型困难
+    - AI API 费用高
+    install:
+      mac: brew install ollama
+      windows: winget install Ollama.Ollama
+    tips:
+    - 首次使用试试 llama3 或 qwen2.5
+    alternatives:
+    - LM Studio
+    - GPT4All
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - 本地
+    - 推荐
+  - name: Jan
+    url: https://jan.ai
+    github: https://github.com/nicedoc/jan
+    desc: 本地优先的 AI 客户端，内置聊天界面，可作为 Ollama 前端
+    opensource: true
+    license: AGPL
+    country: 美国
+    platform:
+    - macOS
+    - Linux
+    - Windows
+    first_release: '2023'
+    rating: A
+    author:
+      name: Jan
+      background: 本地 AI 客户端开发商
+    privacy: 5
+    usability: 5
+    china_access: 5
+    maintenance: 5
+    advantages:
+    - 美观的聊天界面
+    - 支持 Ollama 后端
+    - 本地优先
+    disadvantages:
+    - 功能还在快速迭代
+    - 部分功能不够稳定
+    solves:
+    - Ollama 缺少好用的前端
+    - 需要本地 AI 聊天界面
+    install:
+      mac: brew install --cask jan
+      windows: winget install Jan.Jan
+    tips:
+    - 配合 Ollama 使用体验最佳
+    alternatives:
+    - Chatbox
+    - Open WebUI
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - 客户端
+  - name: Ensu
+    url: https://ente.com/blog/ensu
+    github: https://github.com/ente-io/ensu
+    desc: 本地运行的 AI 聊天，模型不联网，对话不离开设备
+    opensource: true
+    license: AGPL
+    country: 国际
+    platform:
+    - Android
+    - iOS
+    - macOS
+    - Windows
+    first_release: '2025'
+    rating: A
+    author:
+      name: Ente Inc.
+      background: 端对端加密服务公司
+    privacy: 5
+    usability: 4
+    china_access: 3
+    maintenance: 5
+    advantages:
+    - 完全本地运行
+    - 端对端加密
+    - 隐私极致
+    disadvantages:
+    - 功能较新
+    - 需要 Ollama 后端
+    solves:
+    - AI 聊天隐私担忧
+    - 需要离线 AI 助手
+    install:
+      windows: 官网下载安装包
+    alternatives:
+    - Jan
+    - Chatbox
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - 加密
+  - name: Voicebox
+    url: https://voicebox.sh
+    github: https://github.com/nicedoc/voicebox
+    desc: 开源本地 AI 语音工作室，声音克隆、全局听写、TTS 生成一体，数据不离本机，支持 MCP 接入 Claude
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - macOS
+    first_release: '2024'
+    rating: A
+    author:
+      name: Voicebox Team
+      background: 开源 AI 语音项目
+    privacy: 5
+    usability: 3
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - 完全本地运行
+    - 声音克隆 + TTS + 听写
+    - 支持 MCP
+    disadvantages:
+    - 仅支持 macOS
+    - 配置较复杂
+    solves:
+    - AI 语音工具隐私担忧
+    - 需要本地 TTS 和听写
+    install:
+      mac: brew install voicebox
+    alternatives:
+    - Whisper
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - 语音
+- category: AI 工具
+  icon: 🧠
+  items:
+  - name: Agency-Agents
+    url: https://github.com/msitarzewski/agency-agents
+    github: https://github.com/msitarzewski/agency-agents
+    desc: 200+ 专业 AI Agent 角色集合，覆盖工程、设计、营销等领域，兼容 Ollama 本地模型
+    opensource: true
+    license: MIT
+    country: 国际
+    platform:
+    - Web
+    first_release: '2024'
+    rating: A
+    author:
+      name: Michał Sitarzewski
+      background: AI Agent 系统设计师
+    privacy: 5
+    usability: 4
+    china_access: 4
+    maintenance: 4
+    advantages:
+    - 200+ 专业角色
+    - 兼容 Ollama
+    - 开源免费
+    disadvantages:
+    - 需要 Ollama 后端
+    - 质量参差不齐
+    solves:
+    - AI Agent 提示词设计困难
+    - 需要专业 AI 角色
+    install:
+      web: GitHub 仓库直接使用
+    alternatives:
+    - GPTs
+    tags:
+    - 开源
+    - 免费
+    - AI
+    - Agent
