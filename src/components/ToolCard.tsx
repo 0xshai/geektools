@@ -1,8 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Card, Button, Tabs, CodeBlock, Icon } from 'animal-island-ui';
+import React, { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
+import { Card, Button, Tabs, CodeBlock } from 'animal-island-ui';
+import { slugify } from '@/lib/utils';
 import type { ToolItem } from '@/types';
+
+interface ToolCardProps {
+  tool: ToolItem & { category: string; categoryIcon: string; slug: string };
+  expanded: boolean;
+  onToggle: () => void;
+  allTools?: { name: string; slug: string }[];
+}
 
 function StarRating({ value, max = 5 }: { value: number; max?: number }) {
   return (
@@ -35,13 +44,27 @@ function OpenSourceBadge({ opensource }: { opensource?: boolean }) {
   );
 }
 
-interface ToolCardProps {
-  tool: ToolItem & { category: string; categoryIcon: string; slug: string };
-  expanded: boolean;
-  onToggle: () => void;
-}
+export default function ToolCard({ tool, expanded, onToggle, allTools = [] }: ToolCardProps) {
+  const router = useRouter();
 
-export default function ToolCard({ tool, expanded, onToggle }: ToolCardProps) {
+  // Build a lookup map for alternatives
+  const toolSlugMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const t of allTools) {
+      map[t.name.toLowerCase()] = t.slug;
+    }
+    return map;
+  }, [allTools]);
+
+  const handleAlternativeClick = (altName: string) => {
+    const slug = toolSlugMap[altName.toLowerCase()];
+    if (slug) {
+      router.push(`/tool/${slug}`);
+    } else {
+      // Fallback: search for it
+      router.push(`/?search=${encodeURIComponent(altName)}`);
+    }
+  };
   // Overview tab content
   const overviewContent = (
     <div className="tool-detail-inner">
@@ -166,9 +189,19 @@ export default function ToolCard({ tool, expanded, onToggle }: ToolCardProps) {
         <div className="detail-section">
           <div className="detail-section-title">🔄 替代品</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-            {tool.alternatives.map((alt) => (
-              <Button key={alt} type="default" size="small">{alt}</Button>
-            ))}
+            {tool.alternatives.map((alt) => {
+              const hasMatch = !!toolSlugMap[alt.toLowerCase()];
+              return (
+                <Button
+                  key={alt}
+                  type={hasMatch ? "primary" : "default"}
+                  size="small"
+                  onClick={() => handleAlternativeClick(alt)}
+                >
+                  {alt}
+                </Button>
+              );
+            })}
           </div>
         </div>
       ) : (
@@ -201,7 +234,7 @@ export default function ToolCard({ tool, expanded, onToggle }: ToolCardProps) {
               aria-label={expanded ? '收起' : '展开'}
             >
               <span className={`expand-icon ${expanded ? 'rotated' : ''}`}>
-                <Icon item={490} size={20} />
+                <img src="/icon-expand.png" alt="expand" width={20} height={20} style={{ display: 'block' }} />
               </span>
             </button>
           </div>

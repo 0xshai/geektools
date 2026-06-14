@@ -1,17 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
+import { cache } from 'react';
+import { unstable_cache } from 'next/cache';
 import { slugify } from './utils';
 import type { Category, ToolItem, RetiredTool, SiteStats, ChangelogEntry } from '@/types';
 
 const yamlPath = path.join(process.cwd(), 'data', 'bookmarks.yaml');
+const retiredPath = path.join(process.cwd(), 'data', 'retired.yaml');
 const changelogPath = path.join(process.cwd(), 'data', 'changelog.yaml');
 
-export function getCategories(): Category[] {
+// Cached YAML reader to avoid repeated file reads
+const getCategoriesCached = cache((): Category[] => {
   const raw = fs.readFileSync(yamlPath, 'utf-8');
   const data = yaml.load(raw) as Category[] | { categories: Category[]; last_updated?: string };
   if (Array.isArray(data)) return data;
   return data.categories || [];
+});
+
+export function getCategories(): Category[] {
+  return getCategoriesCached();
 }
 
 export function getLastUpdated(): string {
@@ -52,72 +60,40 @@ export function getTopTools(): (ToolItem & { category: string; categoryIcon: str
   return getAllTools().filter((t) => t.rating === 'S+' || t.rating === 'S');
 }
 
-export function getDailyPick(): (ToolItem & { category: string; categoryIcon: string; slug: string }) | null {
-  const topTools = getTopTools();
-  if (topTools.length === 0) return null;
-  const today = new Date();
-  const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
-  return topTools[dayOfYear % topTools.length];
-}
+// Daily pick with unstable_cache for build-time stability
+export const getDailyPick = unstable_cache(
+  async (): Promise<(ToolItem & { category: string; categoryIcon: string; slug: string }) | null> => {
+    const topTools = getTopTools();
+    if (topTools.length === 0) return null;
+    const today = new Date();
+    const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000);
+    return topTools[dayOfYear % topTools.length];
+  },
+  ['daily-pick'],
+  { revalidate: 86400 } // Cache for 24 hours
+);
 
+// Sort by added_date descending, fallback to keeping original order for items without date
 export function getRecentTools(count: number = 5): (ToolItem & { category: string; categoryIcon: string; slug: string })[] {
   const all = getAllTools();
-  return all.slice(-count).reverse();
+  const sorted = [...all].sort((a, b) => {
+    if (a.added_date && b.added_date) {
+      return new Date(b.added_date).getTime() - new Date(a.added_date).getTime();
+    }
+    if (a.added_date) return -1;
+    if (b.added_date) return 1;
+    return 0;
+  });
+  return sorted.slice(0, count);
 }
 
 export function getRetiredTools(): RetiredTool[] {
-  return [
-    {
-      name: 'Chrome',
-      reason: ['隐私问题严重', 'Google 数据收集过度'],
-      replaced_by: 'Brave',
-    },
-    {
-      name: 'Evernote',
-      reason: ['商业化严重', '免费功能大幅缩水'],
-      replaced_by: 'Obsidian',
-    },
-    {
-      name: 'Notion',
-      reason: ['数据存储在云端', '隐私无法保障', '国内访问不稳定'],
-      replaced_by: 'Notesnook',
-    },
-    {
-      name: 'IDM',
-      reason: ['闭源付费', '仅支持 Windows'],
-      replaced_by: 'AB Download',
-    },
-    {
-      name: 'Google Photos',
-      reason: ['隐私担忧', '免费额度缩减'],
-      replaced_by: 'Ente',
-    },
-    {
-      name: 'LastPass',
-      reason: ['多次安全事件', '免费版功能大幅缩减'],
-      replaced_by: 'Bitwarden',
-    },
-    {
-      name: 'Dropbox',
-      reason: ['端对端加密需付费', '隐私政策不佳'],
-      replaced_by: 'Syncthing',
-    },
-    {
-      name: 'VS Code',
-      reason: ['微软遥测收集', '启动慢内存占用高'],
-      replaced_by: 'Zed',
-    },
-    {
-      name: 'Google Authenticator',
-      reason: ['无加密备份', '换手机迁移困难'],
-      replaced_by: 'Aegis',
-    },
-    {
-      name: 'CCleaner',
-      reason: ['曾植入恶意软件', '闭源不透明'],
-      replaced_by: 'WindowsCleaner',
-    },
-  ];
+  try {
+    const raw = fs.readFileSync(retiredPath, 'utf-8');
+    return yaml.load(raw) as RetiredTool[];
+  } catch {
+    return [];
+  }
 }
 
 export function getSiteStats(): SiteStats {

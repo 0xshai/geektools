@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import { getCategorySlug } from '@/lib/utils';
 import type { Category } from '@/types';
 
 interface SidebarProps {
@@ -44,9 +45,8 @@ export default function Sidebar({ categories, activeCategory, onCategoryClick }:
   };
 
   const handleCategoryClick = (category: string) => {
-    // If not on home page, navigate to home first with category
+    // Use hash-based routing for static export compatibility
     if (pathname !== '/' && pathname !== '/index.html') {
-      // Use URL hash to pass category, then home page reads it
       router.push(`/#cat=${encodeURIComponent(category)}`);
     } else {
       onCategoryClick?.(category);

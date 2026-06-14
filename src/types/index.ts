@@ -13,6 +13,7 @@ export interface ToolItem {
   country?: string;
   platform?: string[];
   first_release?: string;
+  added_date?: string;
   rating?: string;
   author?: Author;
   privacy?: number;
@@ -31,6 +32,8 @@ export interface ToolItem {
 export interface Category {
   category: string;
   icon: string;
+  desc?: string;
+  color?: string;
   items: ToolItem[];
 }
 

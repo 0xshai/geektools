@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Input, Icon } from 'animal-island-ui';
+import { Input } from 'animal-island-ui';
 import { useRouter } from 'next/navigation';
 import Fuse from 'fuse.js';
 import type { ToolItem } from '@/types';
@@ -73,7 +73,7 @@ export default function Header({ allTools }: HeaderProps) {
   return (
     <header className="site-header">
       <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-        <Icon item={29} size={36} />
+        <img src="/icon-logo.png" alt="logo" width={36} height={36} style={{ display: 'block' }} />
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <span style={{ fontSize: 16, fontWeight: 800, color: '#725d42', letterSpacing: '-0.3px', lineHeight: 1.2 }}>极客工具站</span>
           <span style={{ fontSize: 11, color: '#a0936e', fontWeight: 500, lineHeight: 1.2 }}>只推荐真正值得安装的软件</span>

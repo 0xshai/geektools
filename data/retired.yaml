@@ -1,0 +1,51 @@
+- name: Chrome
+  reason:
+    - 隐私问题严重
+    - Google 数据收集过度
+  replaced_by: Brave
+- name: Evernote
+  reason:
+    - 商业化严重
+    - 免费功能大幅缩水
+  replaced_by: Obsidian
+- name: Notion
+  reason:
+    - 数据存储在云端
+    - 隐私无法保障
+    - 国内访问不稳定
+  replaced_by: Notesnook
+- name: IDM
+  reason:
+    - 闭源付费
+    - 仅支持 Windows
+  replaced_by: AB Download
+- name: Google Photos
+  reason:
+    - 隐私担忧
+    - 免费额度缩减
+  replaced_by: Ente
+- name: LastPass
+  reason:
+    - 多次安全事件
+    - 免费版功能大幅缩减
+  replaced_by: Bitwarden
+- name: Dropbox
+  reason:
+    - 端对端加密需付费
+    - 隐私政策不佳
+  replaced_by: Syncthing
+- name: VS Code
+  reason:
+    - 微软遥测收集
+    - 启动慢内存占用高
+  replaced_by: Zed
+- name: Google Authenticator
+  reason:
+    - 无加密备份
+    - 换手机迁移困难
+  replaced_by: Aegis
+- name: CCleaner
+  reason:
+    - 曾植入恶意软件
+    - 闭源不透明
+  replaced_by: WindowsCleaner

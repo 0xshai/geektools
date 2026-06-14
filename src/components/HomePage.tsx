@@ -26,58 +26,13 @@ const featureCards = [
   },
 ];
 
-// Category descriptions for typewriter effect
-const categoryDescMap: Record<string, string> = {
-  '编程工具': '提升开发效率的轻量工具，让代码更优雅',
-  '浏览器': '注重隐私与速度的现代化浏览器',
-  '图像处理': 'AI 驱动的图像编辑与处理工具',
-  '下载工具': '高效稳定的下载管理工具',
-  '视频处理': '专业级视频剪辑与后期处理',
-  '视频播放': '轻量无广告的本地视频播放器',
-  '设计': '开源免费的专业设计工具',
-  '系统工具': '让系统更高效的实用工具',
-  '翻译工具': '隐私友好的翻译与语言工具',
-  '文件同步': '端到端加密的文件同步方案',
-  '输入法': '隐私安全的输入法工具',
-  '邮箱': '注重隐私的电子邮件服务',
-  '密码管理': '安全可靠的密码管理工具',
-  '双因素认证': '开源的两步验证工具',
-  '办公': '轻量高效的办公工具',
-  '笔记': '隐私优先的笔记应用',
-  '加密云盘': '端到端加密的云存储方案',
-  '效率工具': '提升工作效率的自动化工具',
-  '学习工具': '帮助学习编程的互动平台',
-  '本地 AI': '本地运行的 AI 工具，数据不离开你的设备',
-  'AI 工具': '精选的 AI 辅助工具',
-};
-
-// Title color mapping for animal-island-ui Title component
-const titleColorMap: Record<string, string> = {
-  '编程工具': 'app-red',
-  '浏览器': 'app-blue',
-  '图像处理': 'app-orange',
-  '下载工具': 'app-yellow',
-  '视频处理': 'purple',
-  '视频播放': 'app-blue',
-  '设计': 'app-pink',
-  '系统工具': 'app-green',
-  '翻译工具': 'app-yellow',
-  '文件同步': 'app-teal',
-  '输入法': 'lime-green',
-  '邮箱': 'app-orange',
-  '密码管理': 'purple',
-  '双因素认证': 'app-teal',
-  '办公': 'app-red',
-  '笔记': 'app-blue',
-  '加密云盘': 'app-green',
-  '效率工具': 'app-yellow',
-  '学习工具': 'purple',
-  '本地 AI': 'app-teal',
-  'AI 工具': 'app-pink',
-};
-
-function getTitleColor(category: string): string {
-  return titleColorMap[category] || 'default';
+// Get category metadata from YAML data
+function getCategoryMeta(categories: Category[], categoryName: string) {
+  const cat = categories.find((c) => c.category === categoryName);
+  return {
+    desc: cat?.desc || '',
+    color: cat?.color || 'default',
+  };
 }
 
 function RatingBadge({ rating }: { rating?: string }) {
@@ -142,14 +97,15 @@ export default function HomePage({
     ? categories.find((c) => c.category === activeCategory)
     : null;
 
-  const titleColor = activeCategory ? getTitleColor(activeCategory) : 'default';
+  const catMeta = activeCategory ? getCategoryMeta(categories, activeCategory) : { desc: '', color: 'default' };
+  const titleColor = catMeta.color;
 
   const handleCategoryClick = useCallback((category: string) => {
     setActiveCategory(category);
     setTypewriterKey((k) => k + 1);
   }, []);
 
-  const categoryDesc = activeCategory ? (categoryDescMap[activeCategory] || '') : '';
+  const categoryDesc = catMeta.desc;
 
   const [copied, setCopied] = useState(false);
   const handleCopyEmail = () => {
@@ -218,6 +174,7 @@ export default function HomePage({
                 tool={tool}
                 expanded={expandedTool === tool.name}
                 onToggle={() => handleToggleTool(tool.name)}
+                allTools={allTools.map((t) => ({ name: t.name, slug: t.slug }))}
               />
             ))}
           </div>

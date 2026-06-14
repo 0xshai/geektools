@@ -1,5 +1,7 @@
 - category: 编程工具
   icon: 🛠️
+  desc: 提升开发效率的轻量工具，让代码更优雅
+  color: app-red
   items:
   - name: Zed
     url: https://zed.dev/
@@ -13,6 +15,7 @@
     - Linux
     - Windows
     first_release: '2024'
+    added_date: '2024-01-01'
     rating: S+
     author:
       name: Zed Industries
@@ -59,6 +62,7 @@
     - Linux
     - Windows
     first_release: '2020'
+    added_date: '2024-01-16'
     rating: A
     author:
       name: Wez Furlong
@@ -103,6 +107,7 @@
     - Linux
     - Windows
     first_release: '2018'
+    added_date: '2024-01-31'
     rating: S
     author:
       name: Jesse Duffield
@@ -143,6 +148,7 @@
     platform:
     - Web
     first_release: '2013'
+    added_date: '2024-02-15'
     rating: A
     author:
       name: Firas Dib
@@ -169,6 +175,8 @@
     - 正则
 - category: 浏览器
   icon: 🦁
+  desc: 注重隐私与速度的现代化浏览器
+  color: app-blue
   items:
   - name: Brave
     url: https://brave.com/zh/
@@ -184,6 +192,7 @@
     - Android
     - iOS
     first_release: '2016'
+    added_date: '2024-03-01'
     rating: S+
     author:
       name: Brendan Eich
@@ -231,6 +240,7 @@
     - Linux
     - Windows
     first_release: '2023'
+    added_date: '2024-03-16'
     rating: S
     author:
       name: Zen Browser Team
@@ -274,6 +284,7 @@
     - Linux
     - Windows
     first_release: '2023'
+    added_date: '2024-03-31'
     rating: A
     author:
       name: Mullvad VPN + Tor Project
@@ -302,6 +313,8 @@
     - 隐私
 - category: 图像处理
   icon: 🎨
+  desc: AI 驱动的图像编辑与处理工具
+  color: app-orange
   items:
   - name: ArcBrush
     url: https://arcbrush.com/
@@ -313,6 +326,7 @@
     - macOS
     - Windows
     first_release: '2024'
+    added_date: '2024-04-16'
     rating: A
     author:
       name: ArcBrush Team
@@ -351,6 +365,7 @@
     - Linux
     - Windows
     first_release: '2023'
+    added_date: '2024-05-01'
     rating: S
     author:
       name: Upscayl Team
@@ -394,6 +409,7 @@
     - macOS
     - Windows
     first_release: '2024'
+    added_date: '2024-05-16'
     rating: A
     author:
       name: CyberTimon
@@ -431,6 +447,7 @@
     platform:
     - Web
     first_release: '2018'
+    added_date: '2024-05-31'
     rating: A
     author:
       name: Kaleido AI
@@ -468,6 +485,7 @@
     platform:
     - Web
     first_release: '2018'
+    added_date: '2024-06-15'
     rating: S
     author:
       name: Google Chrome Labs
@@ -510,6 +528,7 @@
     - Linux
     - Windows
     first_release: '1990'
+    added_date: '2024-06-30'
     rating: A
     author:
       name: ImageMagick Studio
@@ -542,6 +561,8 @@
     - 图片处理
 - category: 下载工具
   icon: ⬇️
+  desc: 高效稳定的下载管理工具
+  color: app-yellow
   items:
   - name: MotrixNext
     url: https://motrix-next.pages.dev/#
@@ -555,6 +576,7 @@
     - Linux
     - Windows
     first_release: '2024'
+    added_date: '2024-07-15'
     rating: A
     author:
       name: nicekid1
@@ -593,6 +615,7 @@
     - Linux
     - Windows
     first_release: '2024'
+    added_date: '2024-07-31'
     rating: S
     author:
       name: Amirhossein Abdollahi
@@ -625,6 +648,8 @@
     - 推荐
 - category: 视频处理
   icon: 🎬
+  desc: 专业级视频剪辑与后期处理
+  color: purple
   items:
   - name: LosslessCut
     url: https://github.com/mifi/lossless-cut
@@ -638,6 +663,7 @@
     - Linux
     - Windows
     first_release: '2017'
+    added_date: '2024-08-15'
     rating: S+
     author:
       name: Mikael Finstad
@@ -680,6 +706,7 @@
     - Linux
     - Windows
     first_release: '2012'
+    added_date: '2024-08-30'
     rating: S+
     author:
       name: OBS Project
@@ -723,6 +750,7 @@
     - Linux
     - Windows
     first_release: '2003'
+    added_date: '2024-09-14'
     rating: S
     author:
       name: HandBrake Team
@@ -766,6 +794,7 @@
     - Linux
     - Windows
     first_release: '2002'
+    added_date: '2024-09-29'
     rating: A
     author:
       name: MediaArea
@@ -805,6 +834,7 @@
     - Linux
     - Windows
     first_release: '2024'
+    added_date: '2024-10-14'
     rating: A
     author:
       name: CodeForReal
@@ -833,6 +863,8 @@
     - 压缩
 - category: 视频播放
   icon: 🎞️
+  desc: 轻量无广告的本地视频播放器
+  color: app-blue
   items:
   - name: mpv
     url: https://mpv.io
@@ -846,6 +878,7 @@
     - Linux
     - Windows
     first_release: '2013'
+    added_date: '2024-10-30'
     rating: S+
     author:
       name: mpv Project
@@ -889,6 +922,7 @@
     platform:
     - Windows
     first_release: '2023'
+    added_date: '2024-11-14'
     rating: A
     author:
       name: Huynh Son Tung
@@ -919,6 +953,8 @@
     - 视频
 - category: 设计
   icon: ✏️
+  desc: 开源免费的专业设计工具
+  color: app-pink
   items:
   - name: Penpot
     url: https://penpot.app
@@ -930,6 +966,7 @@
     platform:
     - Web
     first_release: '2022'
+    added_date: '2024-11-29'
     rating: S
     author:
       name: Kaleidos
@@ -971,6 +1008,7 @@
     platform:
     - Web
     first_release: '2020'
+    added_date: '2024-12-14'
     rating: S
     author:
       name: Excalidraw Team
@@ -1004,6 +1042,8 @@
     - 推荐
 - category: 系统工具
   icon: ⚙️
+  desc: 让系统更高效的实用工具
+  color: app-green
   items:
   - name: Everything
     url: https://voidtools.com
@@ -1014,6 +1054,7 @@
     platform:
     - Windows
     first_release: '2006'
+    added_date: '2024-12-29'
     rating: S+
     author:
       name: David Carpenter
@@ -1053,6 +1094,7 @@
     platform:
     - Windows
     first_release: '2019'
+    added_date: '2025-01-13'
     rating: S
     author:
       name: Flow Launcher Team
@@ -1096,6 +1138,7 @@
     - Linux
     - Windows
     first_release: '2017'
+    added_date: '2025-01-28'
     rating: A
     author:
       name: Flameshot Org
@@ -1134,6 +1177,7 @@
     platform:
     - Windows
     first_release: '2015'
+    added_date: '2025-02-13'
     rating: S
     author:
       name: Scoop Installer Team
@@ -1175,6 +1219,7 @@
     platform:
     - Windows
     first_release: '2008'
+    added_date: '2025-02-28'
     rating: A
     author:
       name: Crystal Dew World
@@ -1212,6 +1257,7 @@
     platform:
     - Windows
     first_release: '2024'
+    added_date: '2025-03-15'
     rating: B
     author:
       name: ElectroHeavenVN
@@ -1241,6 +1287,8 @@
     - 清理
 - category: 翻译工具
   icon: 🌐
+  desc: 隐私友好的翻译与语言工具
+  color: app-yellow
   items:
   - name: 欧路词典
     url: https://www.eudic.net
@@ -1254,6 +1302,7 @@
     - Android
     - iOS
     first_release: '2010'
+    added_date: '2025-03-30'
     rating: A
     author:
       name: 欧路词典团队
@@ -1292,6 +1341,7 @@
     - macOS
     - Windows
     first_release: '2017'
+    added_date: '2025-04-14'
     rating: S
     author:
       name: crimx
@@ -1323,6 +1373,8 @@
     - 推荐
 - category: 文件同步
   icon: 🔄
+  desc: 端到端加密的文件同步方案
+  color: app-teal
   items:
   - name: Syncthing
     url: https://syncthing.net
@@ -1338,6 +1390,7 @@
     - Android
     - iOS
     first_release: '2013'
+    added_date: '2025-04-29'
     rating: S+
     author:
       name: The Syncthing Project
@@ -1384,6 +1437,7 @@
     - Android
     - iOS
     first_release: '2022'
+    added_date: '2025-05-15'
     rating: S
     author:
       name: Tien Do Nam
@@ -1418,6 +1472,8 @@
     - 推荐
 - category: 输入法
   icon: ⌨️
+  desc: 隐私安全的输入法工具
+  color: lime-green
   items:
   - name: 清风输入法
     url: https://huanfeng.github.io/WindInput/
@@ -1429,6 +1485,7 @@
     platform:
     - Windows
     first_release: '2023'
+    added_date: '2025-05-30'
     rating: A
     author:
       name: huanfeng
@@ -1457,6 +1514,8 @@
     - 输入法
 - category: 邮箱
   icon: 📬
+  desc: 注重隐私的电子邮件服务
+  color: app-orange
   items:
   - name: Outlook
     url: https://outlook.com
@@ -1471,6 +1530,7 @@
     - Android
     - iOS
     first_release: '2012'
+    added_date: '2025-06-14'
     rating: A
     author:
       name: Microsoft
@@ -1510,6 +1570,7 @@
     - Android
     - iOS
     first_release: '2014'
+    added_date: '2025-06-29'
     rating: S+
     author:
       name: Proton AG
@@ -1555,6 +1616,7 @@
     - Android
     - iOS
     first_release: '2011'
+    added_date: '2025-07-14'
     rating: S
     author:
       name: Tuta Team
@@ -1585,6 +1647,8 @@
     - 隐私
 - category: 密码管理
   icon: 🔐
+  desc: 安全可靠的密码管理工具
+  color: purple
   items:
   - name: Bitwarden
     url: https://bitwarden.com
@@ -1602,6 +1666,7 @@
     - iOS
     - 浏览器扩展
     first_release: '2016'
+    added_date: '2025-07-29'
     rating: S+
     author:
       name: Bitwarden Inc.
@@ -1648,6 +1713,7 @@
     - macOS
     - Windows
     first_release: '2023'
+    added_date: '2025-08-13'
     rating: A
     author:
       name: Alexander Chepurnoy
@@ -1678,6 +1744,8 @@
     - 密码
 - category: 双因素认证
   icon: 🔑
+  desc: 开源的两步验证工具
+  color: app-teal
   items:
   - name: Aegis
     url: https://getaegis.app
@@ -1689,6 +1757,7 @@
     platform:
     - Android
     first_release: '2018'
+    added_date: '2025-08-29'
     rating: S+
     author:
       name: beemdevelopment
@@ -1733,6 +1802,7 @@
     - iOS
     - 浏览器扩展
     first_release: '2020'
+    added_date: '2025-09-13'
     rating: S
     author:
       name: 2FAS Team
@@ -1777,6 +1847,7 @@
     - Windows
     - Web
     first_release: '2023'
+    added_date: '2025-09-28'
     rating: S
     author:
       name: Ente Inc.
@@ -1806,6 +1877,8 @@
     - 加密
 - category: 办公
   icon: 📄
+  desc: 轻量高效的办公工具
+  color: app-red
   items:
   - name: OnlyOffice
     url: https://www.onlyoffice.com
@@ -1822,6 +1895,7 @@
     - Android
     - iOS
     first_release: '2014'
+    added_date: '2025-10-13'
     rating: A
     author:
       name: ONLYOFFICE
@@ -1852,6 +1926,8 @@
     - 办公
 - category: 笔记
   icon: 📝
+  desc: 隐私优先的笔记应用
+  color: app-pink
   items:
   - name: Notesnook
     url: https://notesnook.com
@@ -1868,6 +1944,7 @@
     - Windows
     - Web
     first_release: '2021'
+    added_date: '2025-10-28'
     rating: S
     author:
       name: Notesnook
@@ -1907,6 +1984,7 @@
     platform:
     - Web
     first_release: '2024'
+    added_date: '2025-11-12'
     rating: A
     author:
       name: Tolaria Team
@@ -1947,6 +2025,7 @@
     - Android
     - iOS
     first_release: '2020'
+    added_date: '2025-11-28'
     rating: S
     author:
       name: Obsidian
@@ -1981,6 +2060,8 @@
     - 推荐
 - category: 加密云盘
   icon: ☁️
+  desc: 端到端加密的云存储方案
+  color: app-blue
   items:
   - name: Ente
     url: https://ente.io
@@ -1996,6 +2077,7 @@
     - Windows
     - Web
     first_release: '2022'
+    added_date: '2025-12-13'
     rating: S+
     author:
       name: Ente Inc.
@@ -2041,6 +2123,7 @@
     - Windows
     - Web
     first_release: '2024'
+    added_date: '2025-12-28'
     rating: A
     author:
       name: Ente Inc.
@@ -2083,6 +2166,7 @@
     - Windows
     - Web
     first_release: '2020'
+    added_date: '2026-01-12'
     rating: A
     author:
       name: Filen GmbH
@@ -2113,6 +2197,8 @@
     - 加密
 - category: 效率工具
   icon: ⏱️
+  desc: 提升工作效率的自动化工具
+  color: app-green
   items:
   - name: Super Productivity
     url: https://super-productivity.com
@@ -2128,6 +2214,7 @@
     - Linux
     - Windows
     first_release: '2019'
+    added_date: '2026-01-27'
     rating: A
     author:
       name: Johannes Millan
@@ -2169,6 +2256,7 @@
     - Linux
     - Windows
     first_release: '2017'
+    added_date: '2026-02-11'
     rating: A
     author:
       name: ActivityWatch Team
@@ -2197,6 +2285,8 @@
     - 时间追踪
 - category: 学习工具
   icon: 📖
+  desc: 帮助学习编程的互动平台
+  color: app-yellow
   items:
   - name: TypeWords
     url: https://typewords.cc
@@ -2207,6 +2297,7 @@
     platform:
     - Web
     first_release: '2024'
+    added_date: '2026-02-26'
     rating: A
     author:
       name: TypeWords Team
@@ -2244,6 +2335,7 @@
     platform:
     - Web
     first_release: '2013'
+    added_date: '2026-03-14'
     rating: S
     author:
       name: Exercism
@@ -2283,6 +2375,7 @@
     platform:
     - Web
     first_release: '2012'
+    added_date: '2026-03-29'
     rating: A
     author:
       name: Codewars
@@ -2312,6 +2405,8 @@
     - 练习
 - category: 本地 AI
   icon: 🤖
+  desc: 本地运行的 AI 工具，数据不离开你的设备
+  color: purple
   items:
   - name: Ollama
     url: https://ollama.com
@@ -2325,6 +2420,7 @@
     - Linux
     - Windows
     first_release: '2023'
+    added_date: '2026-04-13'
     rating: S+
     author:
       name: Ollama
@@ -2370,6 +2466,7 @@
     - Linux
     - Windows
     first_release: '2023'
+    added_date: '2026-04-28'
     rating: A
     author:
       name: Jan
@@ -2414,6 +2511,7 @@
     - macOS
     - Windows
     first_release: '2025'
+    added_date: '2026-05-13'
     rating: A
     author:
       name: Ente Inc.
@@ -2452,6 +2550,7 @@
     platform:
     - macOS
     first_release: '2024'
+    added_date: '2026-05-28'
     rating: A
     author:
       name: Voicebox Team
@@ -2481,6 +2580,8 @@
     - 语音
 - category: AI 工具
   icon: 🧠
+  desc: 精选的 AI 辅助工具
+  color: app-orange
   items:
   - name: Agency-Agents
     url: https://github.com/msitarzewski/agency-agents
@@ -2492,6 +2593,7 @@
     platform:
     - Web
     first_release: '2024'
+    added_date: '2026-06-13'
     rating: A
     author:
       name: Michał Sitarzewski
