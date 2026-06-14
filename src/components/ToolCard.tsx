@@ -219,7 +219,7 @@ export default function ToolCard({ tool, expanded, onToggle, allTools = [] }: To
 
   return (
     <div className={`tool-card ${expanded ? 'tool-card-expanded' : ''}`}>
-      <Card pattern="default" onClick={!expanded ? onToggle : undefined}>
+      <Card pattern="default" onClick={onToggle}>
         <div className="tool-card-header">
           <div className="tool-card-left">
             <span className="tool-card-name">{tool.name}</span>
@@ -272,6 +272,9 @@ export default function ToolCard({ tool, expanded, onToggle, allTools = [] }: To
                   <Button type="default" size="small">GitHub</Button>
                 </a>
               )}
+              <Button type="default" size="small" onClick={() => router.push(`/tool/${tool.slug}`)}>
+                查看完整详情
+              </Button>
             </div>
 
             {/* Tabs */}
