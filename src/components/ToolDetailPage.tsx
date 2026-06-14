@@ -230,6 +230,11 @@ export default function ToolDetailPage({ tool, categories }: ToolDetailPageProps
                   <Button type="default" size="middle">GitHub</Button>
                 </a>
               )}
+              {tool.blog_url && (
+                <a href={tool.blog_url} target="_blank" rel="noopener noreferrer">
+                  <Button type="default" size="middle">查看博客文章</Button>
+                </a>
+              )}
             </div>
           </div>
 

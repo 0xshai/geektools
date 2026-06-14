@@ -97,6 +97,7 @@
     - 终端
   - name: Lazygit
     url: https://github.com/jesseduffield/lazygit
+    blog_url: https://shaifx.pages.dev/posts/lazygit-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E5%91%8A%E5%88%AB%E5%A4%8D%E6%9D%82%E7%9A%84-git-%E5%91%BD%E4%BB%A4/
     github: https://github.com/jesseduffield/lazygit
     desc: 终端里的 Git 可视化工具
     opensource: true
@@ -868,6 +869,7 @@
   items:
   - name: mpv
     url: https://mpv.io
+    blog_url: https://shaifx.pages.dev/posts/mpv-the-media-player/
     github: https://github.com/mpv-player/mpv
     desc: 轻量高性能的命令行视频播放器，支持脚本扩展，GPU 解码，几乎兼容所有格式
     opensource: true
@@ -1169,6 +1171,7 @@
     - 截图
   - name: Scoop
     url: https://scoop.sh
+    blog_url: https://shaifx.pages.dev/posts/%E7%94%A8scoop%E7%AE%A1%E7%90%86windows%E8%BD%AF%E4%BB%B6/
     github: https://github.com/ScoopInstaller/Scoop
     desc: Windows 命令行包管理器
     opensource: true
@@ -1976,6 +1979,7 @@
     - 推荐
   - name: Tolaria
     url: https://tolaria.md/
+    blog_url: https://shaifx.pages.dev/posts/tolaria%E4%BB%8B%E7%BB%8D/
     github: https://github.com/nicedoc/tolaria
     desc: 本地优先的卡片式笔记工具
     opensource: true
@@ -2542,6 +2546,7 @@
     - 加密
   - name: Voicebox
     url: https://voicebox.sh
+    blog_url: https://shaifx.pages.dev/posts/voicebox-%E6%9C%AC%E5%9C%B0%E5%BC%80%E6%BA%90%E8%AF%AD%E9%9F%B3%E5%B7%A5%E4%BD%9C%E5%AE%A4/
     github: https://github.com/nicedoc/voicebox
     desc: 开源本地 AI 语音工作室，声音克隆、全局听写、TTS 生成一体，数据不离本机，支持 MCP 接入 Claude
     opensource: true

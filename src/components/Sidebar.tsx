@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { getCategorySlug } from '@/lib/utils';
 import type { Category } from '@/types';
 
@@ -109,7 +110,7 @@ export default function Sidebar({ categories, activeCategory, onCategoryClick }:
                 {walletAddresses.map((w, i) => (
                   <div key={w.chain} className="crypto-item">
                     <div className="crypto-header">
-                      <img className="crypto-icon" src={w.icon} alt={w.symbol} />
+                      <Image className="crypto-icon" src={w.icon} alt={w.symbol} width={24} height={24} />
                       <span className="crypto-name">{w.chain}</span>
                       <span className="crypto-symbol">{w.symbol}</span>
                     </div>
